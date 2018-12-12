@@ -155,7 +155,7 @@ if (key_inputs[4]==1){
 	
 	if iactive_instance!=noone{
 	
-		with( iactive_instance.object_index )
+		with( iactive_instance )
 		{
 			event_perform(ev_other, ev_user0);
 		}

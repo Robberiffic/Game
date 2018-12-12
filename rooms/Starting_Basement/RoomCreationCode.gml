@@ -1,5 +1,12 @@
 var a = layer_get_all_elements("boxes_layer");
 
+// specify path to dialogue text file for room
+//dialogue_asset_path = "\assets\dialogue\objects\basement.json"
+//Room_Dialogue_Load(working_directory + "\assets\dialogue\objects\basement.json");
+Room_Dialogue_Load("basement.json");
+
+
+// Create layers, add depth
 for (var i = 0; i < array_length_1d(a); i++;)
    {
    //if layer_get_element_type(a[i]) == layerelementtype_sprite

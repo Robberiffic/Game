@@ -1,0 +1,29 @@
+[
+	{
+		"ID": 1,
+		"NAME": "empty_box",
+		"DIALOGUE":[
+			"It's an empty basement box",
+			"There's nothing useful inside...",
+			"...and it smells like mold."
+		
+		]
+	},
+	{
+		"ID": 2,
+		"NAME": "dresser",
+		"DIALOGUE":[
+			"This dresser is full of junk.",
+			"Anything useful got taken a long time ago."
+		
+		]
+	},
+	{
+		"ID": 3,
+		"NAME": "workbench",
+		"DIALOGUE":[
+			"This old workbench has always been here."
+		
+		]
+	},
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "ID":1,
+    "NAME":"Big Sun",
+    "RARITY":1,
+    "ATK":4,
+    "DEF":1,
+    "IMAGE":"spr_BigSun",
+    "FLAVOR":"Here comes the Sun!"
+  },
+  {
+    "ID":2,
+    "NAME":"Bunny",
+    "RARITY":1,
+    "ATK":2,
+    "DEF":2,
+    "IMAGE":"spr_Bunny",
+    "FLAVOR":"Cute but deadly"
+  }
+]

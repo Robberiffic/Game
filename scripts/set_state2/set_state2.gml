@@ -4,7 +4,7 @@
 
 var key_inputs = argument[0];
 
-
+#region Setup Faces and Tap Parameters
 // separate inputs
 rK = key_inputs[0];
 lK = key_inputs[1];
@@ -34,11 +34,14 @@ if (face == 8) {
 if (xaxis==0) && (yaxis==0){
 	face = -1;
 }
-	
+#endregion
+
+
 // initialize empty strings for UP/DOWN, LEFT/RIGHT components of direction state name	
 ret1 = "";
 ret2 = "";
 
+#region If moving right...
 // if moving in a direction with a RIGHT component
 if (face==0 || face==1 || face==7 ){
 
@@ -79,7 +82,9 @@ if (face==0 || face==1 || face==7 ){
 	
 		
 }
+#endregion
 
+#region If Moving Left...
 // same for leftward movement
 if (face==3 || face==4 || face==5 ){	
 	
@@ -114,7 +119,9 @@ if (face==3 || face==4 || face==5 ){
 				
 	
 }
+#endregion
 
+#region If Moving Up...
 // Sliding for up movement
 inst = instance_place_range(x,  y, 0, -y_tap, Coll_Obj_Master)
 if (face==2){
@@ -137,7 +144,9 @@ if (face==2){
 	}
 	
 }				
+#endregion
 
+#region If moving down...
 // Sliding for down movement
 inst = instance_place_range(	x,  y , 0, +y_tap, Coll_Obj_Master)
 if (face==6){			
@@ -159,7 +168,7 @@ if (face==6){
 	}
 
 }		
-
+#endregion
 
 // combine string components of state names		
 ret = ret2 + ret1;
